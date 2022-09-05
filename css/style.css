@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+}
+body {
+    display: flex; 
+    align-items: center; 
+    flex-direction: column; 
+    min-height: 100vh; 
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 100%, 74%);
+    color:hsl(0, 100%, 100%) ;
+}
+picture {
+    position:absolute;
+}
+header {
+    
+}
+.top{
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+}
+.title {
+    padding: 70px 25px 10px 25px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.first-paragraph{
+    padding: 0 15px 40px 15px;
+    text-align: center;
+}
+
+@media (min-width:650px) {
+    body {
+        
+    }
+}
