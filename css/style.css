@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    box-sizing: border-box;
 }
 body {
     display: flex; 
@@ -9,14 +10,9 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: hsl(0, 100%, 74%);
     color:hsl(0, 100%, 100%) ;
+    background-image: url("../images/bg-intro-mobile.png");
 }
-picture {
-    position:absolute;
-    z-index: -1;
-}
-header {
-    
-}
+
 .top{
     display: flex;
     align-items: center; 
@@ -34,7 +30,13 @@ header {
     text-align: center;
     line-height: 1.5;
 }
+.second{
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+}
 button {
+    width: 300px;
     color:hsl(0, 100%, 100%);
     background-color: hsl(248, 32%, 49%);
     margin: 15px 15px;
@@ -49,8 +51,10 @@ button {
     font-weight: 600;
 }
 .formulario{
+    width: 300px;
     display:flex;
     flex-direction: column;
+    max-width: 450px;
     background-color: hsl(0, 100%, 100%);
     margin: 15px 15px;
     padding: 20px 25px;
@@ -90,8 +94,52 @@ button {
     font-weight: 600;
 }
 
-@media (min-width:650px) {
+@media (min-width:375px) and (max-width:800px) {
     body {
-        
+        background-image: url("../images/bg-intro-desktop.png");
+    }
+    main {
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+    }
+}
+
+@media (min-width:800px) {
+    body {
+        background-image: url("../images/bg-intro-desktop.png");
+    }
+    
+    main {
+        display:flex;
+        flex-direction: row;
+        align-items:center;
+        min-height: 90vh; 
+    }
+    .header{
+        width: 50%;
+        margin: 0 10px 0 70px;
+    }
+    .top {
+        align-items: flex-start;
+    }
+    .title{
+        padding-left: 0;
+        font-size: 2.5rem;
+        text-align: left;
+        line-height: 1.2;
+    }
+    .first-paragraph{
+        padding-left: 0;
+        text-align: left;
+    }
+    .second {
+        width: 50%;
+    }
+    button{
+        width: 400px;
+    }
+    .formulario{
+        width: 400px;
     }
 }
