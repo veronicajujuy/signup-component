@@ -12,6 +12,7 @@ body {
 }
 picture {
     position:absolute;
+    z-index: -1;
 }
 header {
     
@@ -28,8 +29,65 @@ header {
     text-align: center;
 }
 .first-paragraph{
-    padding: 0 15px 40px 15px;
+    padding: 10px 15px 40px 15px;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
+    line-height: 1.5;
+}
+button {
+    color:hsl(0, 100%, 100%);
+    background-color: hsl(248, 32%, 49%);
+    margin: 15px 15px;
+    padding: 20px 45px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    box-shadow: 0 8px hsla(249, 10%, 26%, 0.426); 
+}
+.big{
+    font-weight: 600;
+}
+.formulario{
+    display:flex;
+    flex-direction: column;
+    background-color: hsl(0, 100%, 100%);
+    margin: 15px 15px;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px hsla(249, 10%, 26%, 0.426) ;
+}
+.campo {
+    padding: 15px 15px;
+    margin: 10px 0;
+    font-family:  'Poppins', sans-serif;
+    font-weight: 600;
+    border: 1px solid hsl(250, 31%, 89%) ;
+    border-radius: 5px;
+}
+
+.btn {
+    color:hsl(0, 100%, 100%);
+    background-color: hsl(154, 59%, 51%);
+    margin: 10px 0;
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    box-shadow: 0 5px hsl(154, 57%, 38%);
+    text-transform: uppercase;
+}
+.text-bottom-form{
+    color:hsla(249, 10%, 26%, 0.426);
+    font-size: 0.7rem;
+    padding: 5px 25px;
+    text-align: center;
+}
+
+.terms {
+    color: red;
+    font-weight: 600;
 }
 
 @media (min-width:650px) {
